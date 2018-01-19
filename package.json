@@ -10,7 +10,7 @@
     "test": "rimraf ./dist && tsc && concurrently 'tsc -w' 'jest --watch ./dist'"
   },
   "bin": {
-    "ghcd": "index.bin.js"
+    "ghcd": "index.js"
   },
   "keywords": [
     "github",
