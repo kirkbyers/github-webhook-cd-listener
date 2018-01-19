@@ -1,6 +1,6 @@
 ## Install
 
-`npm i -g ghcd`
+`npm i -g @kbye/ghcd`
 
 ## Usage
 
