@@ -1,5 +1,5 @@
 {
-  "name": "github-continuous-delivery",
+  "name": "@kbye/ghcd",
   "version": "1.0.0",
   "description": "An Express CLI tool for setting up continuous delivery with github webhooks",
   "main": "./bin/index.js",
