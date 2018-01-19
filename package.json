@@ -1,14 +1,22 @@
 {
-  "name": "github-cd",
+  "name": "github-continuous-delivery",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An Express CLI tool for setting up continuous delivery with github webhooks",
+  "main": "./bin/index.js",
   "scripts": {
     "dev": "tsc -w",
+    "build": "tsc --outDir bin",
     "start": "tsc && node --harmony ./index.js",
     "test": "rimraf ./dist && tsc && concurrently 'tsc -w' 'jest --watch ./dist'"
   },
-  "keywords": [],
+  "bin": {
+    "ghcd": "./bin/index.js"
+  },
+  "keywords": [
+    "github",
+    "continuous",
+    "delivery"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
