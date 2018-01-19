@@ -8,7 +8,8 @@ const app = express();
 program
   .version('0.0.0')
   .option('-p, --port <n>', 'Port number to listen to', parseInt)
-  .option('-s --script <s>', 'Relative path to script to run on webhook POST')
+  .option('-e, --exec <s>', 'Relative path to script to execute on webhook POST')
+  .option('-s, --secret <s>', 'Webhook secret to compare to on POST')
   .parse(process.argv);
 
 const portNumber = program.port || 6767;
